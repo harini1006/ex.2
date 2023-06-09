@@ -25,18 +25,43 @@ The result is that combinational logic circuits have no feedback, and any change
 5.	For different input combinations, generate the timing diagram.
 
 ## Simplification:
+![WhatsApp Image 2023-06-09 at 22 51 22](https://github.com/harini1006/ex.2/assets/113497405/a97a3a8b-aba4-44f8-8f2d-41bc4c82d5b0)
 
 ## Truth Table:
+![image](https://github.com/harini1006/ex.2/assets/113497405/baa4bb0c-eeb0-4f7e-aef9-4ae9d9147646)
+
 
 ## Program:
+```python
+module exp2a(a,b,c,d,f1,f2);
+input a,b,c,d;
+output f1,f2;
+wire adash,bdash,cdash,ddash,x,y,z,p,q,r;
+not(adash,a);
+not(bdash,b);
+not(cdash,c);
+not(ddash,d);
+and(x,bdash,ddash);
+and(y,adash,b,d);
+and(z,a,b,cdash);
+or(f1,x,y,z);
+and(p,cdash,d);
+and(q,a,c);
+and(r,b,c);
+or(f2,p,q,r);
+endmodule
+```
 
 
 ## RTL Schematic:
+![Uploading image.png…]()
 
 
 
 
 ## Timing Diagram:
+![image](https://github.com/harini1006/ex.2/assets/113497405/70ccc8e0-df2c-4843-ba1e-6ecb23dd74e6)
+
 
 
 
