@@ -54,7 +54,8 @@ endmodule
 
 
 ## RTL Schematic:
-![Uploading image.png…]()
+![image](https://github.com/harini1006/ex.2/assets/113497405/a4586ada-6bd4-4415-926c-91655b63c6b9)
+
 
 
 
